@@ -219,7 +219,7 @@ stateResult_t rvWeaponMachinegun::State_Idle( const stateParms_t& parms ) {
 rvWeaponMachinegun::State_Fire
 ================
 */
-stateResult_t rvWeaponMachinegun::State_Fire ( const stateParms_t& parms ) {
+stateResult_t rvWeaponMachinegun::State_Fire ( const stateParms_t& parms ) { //is firing state
 	enum {
 		STAGE_INIT,
 		STAGE_WAIT,
