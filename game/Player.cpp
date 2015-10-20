@@ -11048,9 +11048,10 @@ void idPlayer::CalculateRenderView( void ) {
 	 				// allow the right player view weapons
 	 				renderView->viewID = entityNumber + 1;
 	 			}
-			} else if ( pm_thirdPerson.GetBool() && IsInVehicle ( ) ) {
+			} else if ( pm_thirdPerson.GetBool()  && IsInVehicle ( ) ) {
 // RAVEN BEGIN
 // jnewquist: option to avoid clipping against world
+				
 				OffsetThirdPersonVehicleView( pm_thirdPersonClip.GetBool() );
 // RAVEN END
 				SmoothenRenderView( false );

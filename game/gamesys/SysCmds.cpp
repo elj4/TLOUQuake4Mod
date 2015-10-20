@@ -470,12 +470,12 @@ void GiveStuffToPlayer( idPlayer* player, const char* name, const char* value )
 		}
 	}
 
-	if ( give_all || idStr::Icmp( name, "armor" ) == 0 ) {
+	/*if ( give_all || idStr::Icmp( name, "armor" ) == 0 ) {
 		player->inventory.armor = player->inventory.maxarmor;
 		if ( !give_all ) {
 			return;
 		}
-	}
+	}*/
 // RAVEN BEGIN
 	if (idStr::Icmp(name, "quad") == 0) {
 		player->GivePowerUp( POWERUP_QUADDAMAGE, SEC2MS( 30.0f ) );

@@ -10787,6 +10787,8 @@ void idPlayer::OffsetThirdPersonView( float angle, float range, float height, bo
 
 	angles = viewAngles;
 	GetViewPos( origin, axis );
+	
+
 
 	if ( angle ) {
 		angles.pitch = 0.0f;
