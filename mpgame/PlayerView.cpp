@@ -514,7 +514,7 @@ void idPlayerView::SingleView( idUserInterface *hud, const renderView_t *view, i
 	}
 
 	// draw screen blobs
-	if (!pm_thirdPerson.GetBool() && !g_skipViewEffects.GetBool() ) { //going to see what happens when changed from !
+	if (!g_skipViewEffects.GetBool() ) { //going to see what happens when changed from !
 		for ( int i = 0 ; i < MAX_SCREEN_BLOBS ; i++ ) {
 			screenBlob_t	*blob = &screenBlobs[i];
 			if ( blob->finishTime <= gameLocal.time ) {
